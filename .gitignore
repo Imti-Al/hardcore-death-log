@@ -1,0 +1,78 @@
+# Gradle caches and build outputs (retain the Gradle wrapper)
+.gradle/
+**/build/
+out/
+bin/
+*.class
+
+# Fabric / Loom development runs
+.fabric/
+run/
+runClient/
+runServer/
+runs/
+
+# Local Minecraft worlds, server installations and runtime data
+server/
+servers/
+amp/
+AMP/
+world/
+world_nether/
+world_the_end/
+saves/
+backups/
+logs/
+crash-reports/
+mods/
+libraries/
+playerdata/
+advancements/
+stats/
+session.lock
+level.dat
+level.dat_old
+*.mca
+*.mcr
+hardcore-deaths.json*
+server.properties
+eula.txt
+ops.json
+whitelist.json
+banned-players.json
+banned-ips.json
+usercache.json
+
+# Credentials and machine-local settings
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+gradle-local.properties
+local.properties
+
+# IDE and operating-system files
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/tasks.json
+!.vscode/settings.json
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.log
+
+# Do not ignore all JARs: gradle/wrapper/gradle-wrapper.jar must be tracked.
+# Keep gradle.properties if it holds version metadata; never store secrets there.
+
+# World-local deduplication state
+hardcore-death-log-state.json*
+world*/
+*.hprof
+*.jfr
+*.launch

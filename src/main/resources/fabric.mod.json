@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "hardcore-death-log",
+	"version": "${version}",
+	"name": "Hardcore Death Log",
+	"description": "A persistent death counter and chronological death history for hardcore servers.",
+	"authors": [
+		"Imtiyaz"
+	],
+	"license": "MIT",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"hardcoredeathlog.HardcoreDeathLog"
+		],
+		"client": [
+			"hardcoredeathlog.client.HardcoreDeathLogClient"
+		]
+	},
+	"mixins": [
+		"hardcore-death-log.mixins.json",
+		{
+			"config": "hardcore-death-log.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
